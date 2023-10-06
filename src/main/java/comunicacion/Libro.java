@@ -49,7 +49,10 @@ public class Libro extends Escrito{
 	}
 	
 	public String toString() {
-		String mensaje = super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas();
+		String mensaje = super.getOrigen() + "\n";
+		mensaje += super.getTitulo() + "\n";
+		mensaje += super.getAutor() + "\n";
+		mensaje += super.getPaginas() + "\n";
 		mensaje += this.co_autor + "\n";
 		mensaje += this.editorial + "\n";
 		mensaje += this.edicion;
